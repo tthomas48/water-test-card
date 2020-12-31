@@ -112,8 +112,8 @@ export class WaterTestCard extends LitElement {
         .label=${`Water Test`}
       >
       <div class="card_content">
-        <ha-formfield label="Total Hardness(ppm)"><label>Total Hardness(ppm)</label><paper-input name="totalHardness" class="flex" pattern="[0-9.]+"
-          .configValue=${"totalHardness"} .value=${this._totalHardness} @value-changed=${this._valueChanged} /></ha-formfield>
+        <div class="row"><div class="flex">Total Hardness(ppm)</div><paper-input name="totalHardness" class="flex" pattern="[0-9.]+"
+          .configValue=${"totalHardness"} .value=${this._totalHardness} @value-changed=${this._valueChanged} /></div>
         <div class="row"><div class="flex">Total Chlorine(ppm)</div><paper-input name="totalChlorine" class="flex" pattern="[0-9.]+"
           .configValue=${"totalChlorine"} .value=${this._totalChlorine} @value-changed=${this._valueChanged} /></div>
         <div class="row"><div class="flex">Free Chlorine(ppm)</div><paper-input name="freeChlorine" class="flex" pattern="[0-9.]+"/
